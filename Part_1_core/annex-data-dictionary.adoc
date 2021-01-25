@@ -1,0 +1,8 @@
+[appendix]
+:appendix-caption: Annex
+
+[[annex-data-dictionary]]
+== CityGML Data Dictionary ( Normative )
+
+[NOTE]
+The data dictionary from CityGML 3.0 Conceptual Model is imported here. This releives the user of this document from having to refer back to the CM standard.
