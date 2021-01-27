@@ -1,4 +1,4 @@
-:Title: OGC CityGML 3.0 XML: Part 0 - Core - Encoding Standard
+:Title: OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -18,7 +18,7 @@
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
 |Publication Date:   <yyyy-mm-dd>
-|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/CityGML-XML-0/3.0
+|External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/CityGML-2/3.0
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Version: 0.1
 |Category: OGC(R) Implementation Specification
@@ -89,15 +89,9 @@ include::clause_4_terms_and_definitions.adoc[]
 
 include::clause_5_conventions.adoc[]
 
-include::clause_6_first_conformance_class.adoc[]
+include::clause_6_requirements.adoc[]
 
-include::clause_7_second_conformance_class.adoc[]
-
-include::clause_8_third_conformance_class.adoc[]
-
-include::clause_9_forth_conformance_class.adoc[]
-
-include::clause_10_media_types.adoc[]
+include::clause_7_media_types.adoc[]
 
 <<<
 include::annex-a.adoc[]
@@ -111,6 +105,8 @@ include::annex-conceptual-model-conformance.adoc[]
 include::annex-data-dictionary.adoc[]
 
 include::annex-history.adoc[]
+
+include::annex-glossary.adoc[]
 
 include::annex-bibliography.adoc[]
 

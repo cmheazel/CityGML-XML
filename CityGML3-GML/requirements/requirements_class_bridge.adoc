@@ -1,10 +1,12 @@
+[[bridge-requirements-class]]
 [cols="1,4",width="90%"]
 |===
 2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
-2+|http://www.opengis.net/spec/ABCD/m.n/req/req-class-a {set:cellbgcolor:#FFFFFF}
-|Target type |Token
-|Dependency |http://www.example.org/req/blah
-|Dependency |urn:iso:ts:iso:19139:clause:6
+2+|http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-bridgee {set:cellbgcolor:#FFFFFF}
+|Target type |Implementation
+|Dependency |http://schemas.opengis.net/citygml/3.0/bridge.xsd[bridge.xsd]
+|Dependency |http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-bridge
+|Dependency |http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base
 |*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1 +
 requirement description {set:cellbgcolor:#FFFFFF}
 |*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2 +
