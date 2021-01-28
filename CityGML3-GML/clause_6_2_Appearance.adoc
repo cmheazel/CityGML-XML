@@ -25,15 +25,29 @@ The Appearance Requirements Classes is dependent on the following Requirements C
 
 ==== GML Elements
 
-The CityGML Appearance XML element names are shown with a XML namespace prefix of “TBD”. Corresponding CityGML UML classes are shown with their CityGML Requirements Class prefix of “TBD”.
+The CityGML Appearance XML elements and their corresponding CityGML UML classes are shown in <<appearance-xml-elements>>.
 
 [#appearance-xml-elements,reftext='{table-caption} {counter:table-num}']
 .Appearance XML Elements
 [width="100%",cols="10,10",options="header"]
 |===
 ^|XML Schema Element  ^|Conceptual Model 
-| |
-| |
+|AbstractSurfaceData | «FeatureType» <<AbstractSurfaceData-section,AbstractSurfaceData>>
+|AbstractTexture |«FeatureType» <<AbstractTexture-section,AbstractTexture>>
+|Appearance |«FeatureType» <<Appearance-section,Appearance>>
+|GeoreferencedTexture |«FeatureType» <<GeoreferencedTexture-section,GeoreferencedTexture>>
+|ParameterizedTexture |«FeatureType» <<ParameterizedTexture-section,ParameterizedTexture>>
+|TextureAssociation |«ObjectType» <<TextureAssociation-section,TextureAssociation>>
+|X3DMaterial |«FeatureType» <<X3DMaterial-section,X3DMaterial>>
+|AbstractTextureParameterization |«DataType» <<AbstractTextureParameterization-section,AbstractTextureParameterization>>
+|ADEOfAbstractSurfaceData |«DataType» <<ADEOfAbstractSurfaceData-section,ADEOfAbstractSurfaceData>>
+|ADEOfAbstractTexture |«DataType» <<ADEOfAbstractTexture-section,ADEOfAbstractTexture>>
+|ADEOfAppearance |«DataType» <<ADEOfAppearance-section,ADEOfAppearance>>
+|ADEOfGeoreferencedTexture |«DataType» <<ADEOfGeoreferencedTexture-section,ADEOfGeoreferencedTexture>>
+|ADEOfParameterizedTexture |«DataType» <<ADEOfParameterizedTexture-section,ADEOfParameterizedTexture>>
+|ADEOfX3DMaterial |«DataType» <<ADEOfX3DMaterial-section,ADEOfX3DMaterial>>
+|TexCoordGen |«DataType» <<TexCoordGen-section,TexCoordGen>>
+|TexCoordList |«DataType» <<TexCoordList-section,TexCoordList>>
 |===
 
 ==== Implementation Decisions

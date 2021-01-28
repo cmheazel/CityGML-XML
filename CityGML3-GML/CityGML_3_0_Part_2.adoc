@@ -17,12 +17,12 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
-|Publication Date:   <yyyy-mm-dd>
+|Publication Date:   <2021-01-28>
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/CityGML-2/3.0
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Version: 0.1
 |Category: OGC(R) Implementation Specification
-|Editor:   <Name(s) of Editor or Editors>
+|Editor:   Charles Heazel
 |===
 
 [cols = "^", frame = "none"]
@@ -33,7 +33,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) <year> Open Geospatial Consortium
+|Copyright (C) 2021 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
 |===
 
