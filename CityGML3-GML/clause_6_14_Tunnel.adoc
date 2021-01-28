@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/tunnel.xsd[t
 
 include::requirements/requirements_class_tunnel.adoc[]
 
+include::requirements/tunnel/REQ_Tunnel_Elements.adoc[]
+
 

@@ -584,7 +584,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#requirements-section">6. Requirements</a>
 <ul class="sectlevel2">
 <li><a href="#base-section">6.1. Base Conformance Class</a></li>
-<li><a href="#appearance-section">6.2. Appearance Conformance Class</a></li>
+<li><a href="#appearance-section">6.2. Appearance Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_dependencies">6.2.1. Dependencies</a></li>
+<li><a href="#_gml_elements">6.2.2. GML Elements</a></li>
+<li><a href="#_implementation_decisions">6.2.3. Implementation Decisions</a></li>
+<li><a href="#_requirements">6.2.4. Requirements</a></li>
+</ul>
+</li>
 <li><a href="#bridge-section">6.3. Bridge Conformance Class</a></li>
 <li><a href="#building-section">6.4. Building Conformance Class</a></li>
 <li><a href="#city-furniture-section">6.5. City Furniture Conformance Class</a></li>
@@ -602,7 +609,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#water-body-section">6.17. Water Body Conformance Class</a></li>
 </ul>
 </li>
-<li><a href="#_media_types_for_any_data_encodings">7. Media Types for any data encoding(s)</a></li>
+<li><a href="#media-types-section">7. Media Types</a></li>
 <li><a href="#annex-abstract-text-suite">Annex A: Conformance Class Abstract Test Suite (Normative)</a>
 <ul class="sectlevel2">
 <li><a href="#_conformance_class_a">A.1. Conformance Class A</a>
@@ -647,7 +654,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-<table id="conceptual-model=mapping" class="tableblock frame-all grid-all stretch">
+<table id="conceptual-model-mapping" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Conceptual Model Mapping</caption>
 <colgroup>
 <col style="width: 20%;">
@@ -1113,26 +1120,41 @@ a model of a system that is defined in terms of a specific platform<br>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-ade" class="bare">http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-ade</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_base_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  1</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/base/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#base-xml-elements">[base-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/cityGMLBase.xsd">cityGMLBase.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
 <h3 id="appearance-section"><a class="anchor" href="#appearance-section"></a>6.2. Appearance Conformance Class</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+replace with appropriate text
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Features of the land, such as naturally occurring water features and vegetation are specified in the LandFeature Requirements Class as land features. Also included are models of the land surface and subsurface layers. Improvements to the land such as the construction of an embankment or the planting of landscape material are considered to be part of Site Facilities in the Facility Requirements Class.</p>
+</div>
 <div class="paragraph">
 <p>The Appearance Conformance Class implements the following Requirements Classes from the CityGML 3.0 Conceptual Model Standard:</p>
 </div>
@@ -1174,23 +1196,90 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_dependencies"><a class="anchor" href="#_dependencies"></a>6.2.1. Dependencies</h4>
+<div class="paragraph">
+<p>The Appearance Requirements Classes is dependent on the following Requirements Classes from this standard.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <a href="#base-section">Base</a> Requirements Class is the only mandatory Requirements Class. This class contains foundational elements upon which a CityGML dataset is built. The <a href="#base-section">Base</a> Requirements Class also defines XML elements and types reused by other Requirements Classes.</p>
+</li>
+<li>
+<p><a href="#ogc07-036">GML 3.2</a> provides most of the geometry types (e.g., Point, LineString, Polygon) used for spatial representations in this Standard. Defines Coordinate Reference Systems. Supports the General Feature Model upon which this Standard is based.</p>
+</li>
+<li>
+<p><a href="#ogc10-129r1">GML 3.3</a> defines the linear referencing concepts (e.g., linear element, distance along, Linear Referencing Methods) used for linearly referenced locations in this Standard. Also included are TINs.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gml_elements"><a class="anchor" href="#_gml_elements"></a>6.2.2. GML Elements</h4>
+<div class="paragraph">
+<p>The CityGML Appearance XML element names are shown with a XML namespace prefix of “TBD”. Corresponding CityGML UML classes are shown with their CityGML Requirements Class prefix of “TBD”.</p>
+</div>
+<table id="appearance-xml-elements" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Appearance XML Elements</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<th class="tableblock halign-center valign-top" style="background-color: #FFFFFF;">XML Schema Element</th>
+<th class="tableblock halign-center valign-top" style="background-color: #FFFFFF;">Conceptual Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_implementation_decisions"><a class="anchor" href="#_implementation_decisions"></a>6.2.3. Implementation Decisions</h4>
+<div class="paragraph">
+<p>The following decisions have been made regarding implementation of the CityGML 3.0 <code>Appearance</code> conformance class in GML.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>decision 1</p>
+</li>
+<li>
+<p>decision 2</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_requirements"><a class="anchor" href="#_requirements"></a>6.2.4. Requirements</h4>
+<table id="req_appearance_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  2</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/base/elements</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#appearance-xml-elements">Table 4</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/appearance.xsd">appearance.xsd</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="bridge-section"><a class="anchor" href="#bridge-section"></a>6.3. Bridge Conformance Class</h3>
@@ -1235,20 +1324,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_bridge_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  3</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/bridge/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#bridge-xml-elements">[bridge-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/bridge.xsd">bridge.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1296,20 +1385,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_building_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  4</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/building/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#building-xml-elements">[building-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/building.xsd">bulding.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1357,20 +1446,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_city_furniture_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  5</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/base/cityfurniture</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#city-furniture-xml-elements">[city-furniture-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/cityFurniture.xsd">cityFurniture.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1418,20 +1507,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_city_object_group_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  6</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/cityobjectgroup/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#city-object-group-xml-elements">[city-object-group-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/cityObjectGroup.xsd">cityObjectGroup.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1479,20 +1568,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_construction_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  7</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/construction/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#construction-xml-elements">[construction-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/construction.xsd">construction.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1540,20 +1629,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_dynamizer_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  8</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/dynamizer/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#dynamizer-xml-elements">[dynamizer-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/dynamizer.xsd">dynamizer.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1601,20 +1690,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_generics_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  9</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/generics/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#generics-xml-elements">[generics-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/generics.xsd">generics.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1662,20 +1751,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_land_use_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  10</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/landuse/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#land-use-xml-elements">[land-use-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/landUse.xsd">landUse.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1723,20 +1812,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_point_cloud_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  11</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/pointcloud/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#point-cloud-xml-elements">[point-cloud-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/pointCloud.xsd">pointCloud.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1784,20 +1873,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_reliefe_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  12</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/relief/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#relief-xml-elements">[relief-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/relief.xsd">relief.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1845,20 +1934,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_transportation_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  13</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/base/transportation</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#transportation-xml-elements">[transportation-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/transportation.xsd">transportation.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1906,20 +1995,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_tunnel_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  14</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/base/tunnel</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#tunnel-xml-elements">[tunnel-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/tunnel.xsd">tunnel.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1967,20 +2056,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-vegetation" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-vegetation</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_vegetation_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  15</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/vegetation/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#vegetation-xml-elements">[vegetation-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/vegetation.xsd">vegetation.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2028,20 +2117,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_verioning_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  16</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/versioning/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#verisioning-xml-elements">[verisioning-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/versioning.xsd">versioning.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2089,20 +2178,20 @@ requirement description</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base" class="bare">http://www.opengis.net/spec/CityGML-2/3.0/req/req-class-base</a></p></td>
 </tr>
+</tbody>
+</table>
+<table id="req_water_body_elements" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 1</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1</a><br>
-requirement description </p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement  17</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>/req/waterbody/elements</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 2</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2</a><br>
-requirement description </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Requirement 3</strong> </p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3" class="bare">http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3</a><br>
-requirement description</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">A conforming application shall support the CityGML XML elements listed in <a href="#water-body-xml-elements">[water-body-xml-elements]</a> in accordance with the GML XML schema specified in <a href="http://schemas.opengis.net/citygml/3.0/waterBodye.xsd">waterBody.xsd</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2110,10 +2199,13 @@ requirement description</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_media_types_for_any_data_encodings"><a class="anchor" href="#_media_types_for_any_data_encodings"></a>7. Media Types for any data encoding(s)</h2>
+<h2 id="media-types-section"><a class="anchor" href="#media-types-section"></a>7. Media Types</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A section describing the MIME-types to be used is mandatory for any Standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html" class="bare">http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.</p>
+<p>Data for all Parts of the CityGML 3.0 GML encoding standard is encoded in GML-conformant XML documents. The standard MIME-type and sub-type for GML data should be used to indicate the encoding in internet exchange.</p>
+</div>
+<div class="paragraph">
+<p>The registered MIME Media Type for GML documents is <code>application/gml+xml</code>.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>

@@ -9,4 +9,5 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/bridge.xsd[b
 
 include::requirements/requirements_class_bridge.adoc[]
 
+include::requirements/bridge/REQ_Bridge_Elements.adoc[]
 

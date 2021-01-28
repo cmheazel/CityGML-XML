@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/cityFurnitur
 
 include::requirements/requirements_class_cityfurniture.adoc[]
 
+include::requirements/cityfurniture/REQ_CityFurniture_Elements.adoc[]
+
 

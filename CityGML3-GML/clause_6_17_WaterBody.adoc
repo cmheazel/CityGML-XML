@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/waterBody.xs
 
 include::requirements/requirements_class_waterbody.adoc[]
 
+include::requirements/waterbody/REQ_WaterBody_Elements.adoc[]
+
 

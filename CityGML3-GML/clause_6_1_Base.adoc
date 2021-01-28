@@ -10,4 +10,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/cityGMLBase.
 
 include::requirements/requirements_class_base.adoc[]
 
+include::requirements/base/REQ_Base_Elements.adoc[]
+
 

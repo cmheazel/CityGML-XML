@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/vegetation.x
 
 include::requirements/requirements_class_vegetation.adoc[]
 
+include::requirements/vegetation/REQ_Vegetation_Elements.adoc[]
+
 

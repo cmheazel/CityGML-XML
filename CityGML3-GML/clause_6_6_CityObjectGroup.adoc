@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/cityObjectGr
 
 include::requirements/requirements_class_cityobjectgroup.adoc[]
 
+include::requirements/cityobjectgroup/REQ_CityObjectGroup_Elements.adoc[]
+
 

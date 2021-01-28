@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/building.xsd
 
 include::requirements/requirements_class_building.adoc[]
 
+include::requirements/building/REQ_Building_Elements.adoc[]
+
 

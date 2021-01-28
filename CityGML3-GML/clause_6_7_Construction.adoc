@@ -8,4 +8,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/construction
 
 include::requirements/requirements_class_construction.adoc[]
 
+include::requirements/construction/REQ_Construction_Elements.adoc[]
+
 

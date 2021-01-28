@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/transportati
 
 include::requirements/requirements_class_transportation.adoc[]
 
+include::requirements/transportation/REQ_Transportation_Elements.adoc[]
+
 

@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/pointCloud.x
 
 include::requirements/requirements_class_pointcloud.adoc[]
 
+include::requirements/pointcloud/REQ_PointCloud_Elements.adoc[]
+
 

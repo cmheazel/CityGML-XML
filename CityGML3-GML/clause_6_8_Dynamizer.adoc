@@ -9,4 +9,6 @@ The applicable GML schema is http://schemas.opengis.net/citygml/3.0/dynamizer.xs
 
 include::requirements/requirements_class_dynamizer.adoc[]
 
+include::requirements/dynamizer/REQ_Dynamizer_Elements.adoc[]
+
 
